@@ -11,7 +11,12 @@
       "Match-3",
       "HeroCraft"
     ],
-    "images": [],
+    "images": [
+      "media/pirates-puzzles-2/pirates-puzzles-2_01.webp",
+      "media/pirates-puzzles-2/pirates-puzzles-2_02.webp",
+      "media/pirates-puzzles-2/pirates-puzzles-2_03.webp",
+      "media/pirates-puzzles-2/pirates-puzzles-2_04.webp"
+    ],
     "video": "https://www.youtube.com/watch?v=tL_BANVguL8",
     "id": "project-1",
     "sourceImages": [
@@ -87,7 +92,12 @@
       "WebSocket",
       "ФКС России"
     ],
-    "images": [],
+    "images": [
+      "media/tournament-mode/tournament-mode_01.webp",
+      "media/tournament-mode/tournament-mode_02.webp",
+      "media/tournament-mode/tournament-mode_03.webp",
+      "media/tournament-mode/tournament-mode_04.webp"
+    ],
     "video": "https://vksport.vkvideo.ru/live-14046705_456243304",
     "id": "project-4",
     "sourceImages": [
@@ -109,7 +119,13 @@
       "Architecture",
       "Web"
     ],
-    "images": [],
+    "images": [
+      "media/monsters-crush-clicker/monsters-crush-clicker_01.webp",
+      "media/monsters-crush-clicker/monsters-crush-clicker_02.webp",
+      "media/monsters-crush-clicker/monsters-crush-clicker_03.webp",
+      "media/monsters-crush-clicker/monsters-crush-clicker_04.webp",
+      "media/monsters-crush-clicker/monsters-crush-clicker_05.webp"
+    ],
     "video": "https://runtime.strm.yandex.ru/player/video/vplvrggyc5rw7vuz4djm?loop=1&mute=1&from=yagames&autoplay=1&preview=0&play_on_visible=0.3&hidden=*&event_prefix=gamepage:",
     "id": "project-5",
     "sourceImages": [
@@ -132,7 +148,14 @@
       "PvP",
       "Match-3"
     ],
-    "images": [],
+    "images": [
+      "media/ship-battles/ship-battles_01.webp",
+      "media/ship-battles/ship-battles_02.webp",
+      "media/ship-battles/ship-battles_03.webp",
+      "media/ship-battles/ship-battles_04.webp",
+      "media/ship-battles/ship-battles_05.webp",
+      "media/ship-battles/ship-battles_06.webp"
+    ],
     "video": "https://www.youtube.com/watch?v=Jk3rzKlzjKo",
     "id": "project-6",
     "sourceImages": [
@@ -187,7 +210,12 @@
       "Coloring",
       "Mobile"
     ],
-    "images": [],
+    "images": [
+      "media/tanktoon/tanktoon_01.webp",
+      "media/tanktoon/tanktoon_02.webp",
+      "media/tanktoon/tanktoon_03.webp",
+      "media/tanktoon/tanktoon_04.webp"
+    ],
     "video": "https://www.youtube.com/watch?v=GGfRhLYrrLI",
     "id": "project-8",
     "sourceImages": [
@@ -208,7 +236,13 @@
       "Word Game",
       "Social"
     ],
-    "images": [],
+    "images": [
+      "media/wordica/wordica_01.webp",
+      "media/wordica/wordica_02.webp",
+      "media/wordica/wordica_03.webp",
+      "media/wordica/wordica_04.webp",
+      "media/wordica/wordica_05.webp"
+    ],
     "video": "https://www.youtube.com/watch?v=IBJZ0IWkkgY",
     "id": "project-9",
     "sourceImages": [
@@ -284,7 +318,15 @@
       "Fighting",
       "Mobile"
     ],
-    "images": [],
+    "images": [
+      "media/unifight/unifight_01.webp",
+      "media/unifight/unifight_02.webp",
+      "media/unifight/unifight_03.webp",
+      "media/unifight/unifight_04.webp",
+      "media/unifight/unifight_05.webp",
+      "media/unifight/unifight_06.webp",
+      "media/unifight/unifight_07.webp"
+    ],
     "video": "https://www.youtube.com/watch?v=BtoOChnZ_ZI",
     "id": "project-12",
     "sourceImages": [
@@ -308,7 +350,12 @@
       "Platformer",
       "Mobile"
     ],
-    "images": [],
+    "images": [
+      "media/unicross/unicross_01.webp",
+      "media/unicross/unicross_02.webp",
+      "media/unicross/unicross_03.webp",
+      "media/unicross/unicross_04.webp"
+    ],
     "video": "https://www.youtube.com/watch?v=FwX-JgGAtRo",
     "id": "project-13",
     "sourceImages": [
