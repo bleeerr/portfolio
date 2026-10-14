@@ -26,13 +26,13 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,251,255,.82);backdro
 .eyebrow{display:inline-block;padding:8px 14px;border-radius:999px;background:#eaf3ff;color:var(--blue);font-size:13px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
 .hero h1{font-size:clamp(34px,6vw,60px);line-height:1.02;margin:16px 0 10px}
 .role{font-size:clamp(20px,3vw,28px);color:var(--blue);font-weight:800;margin:0 0 14px}
-.lead{font-size:18px;color:#314868;max-width:760px;margin:0 0 20px}
+.lead{font-size:18px;color:#314868;max-width:760px;margin:0 0 20px;line-height:1.76}
 .highlights{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 20px;padding:0;list-style:none}
 .highlights li{padding:10px 14px;border-radius:14px;background:rgba(255,255,255,.8);border:1px solid var(--line);color:#28405f;font-weight:600}
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:34px 0 50px}
-.metric{background:rgba(255,255,255,.78);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:26px;padding:22px 26px;min-height:138px;display:flex;flex-direction:column;justify-content:space-between}
-.metric strong{font-size:44px;line-height:1;font-weight:900}
-.metric span{color:#49627f;font-size:18px}
+.metric{background:rgba(255,255,255,.78);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:26px;padding:22px 26px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;gap:14px}
+.metric strong{font-size:clamp(31px,3.2vw,43px);line-height:1.18;font-weight:900}
+.metric span{color:#49627f;font-size:17px;line-height:1.42}
 .section{padding:10px 0 30px}
 .section h2{font-size:clamp(28px,4vw,42px);margin:12px 0}
 .section p.lead2{color:#49627f;font-size:18px;max-width:780px;margin:0 0 20px}
@@ -73,7 +73,34 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,251,255,.82);backdro
 .publisher{padding:9px 12px;border-radius:999px;background:#f1f6ff;border:1px solid #d6e3fb;color:#315179;font-weight:700}
 .footer{padding:40px 0 70px;color:var(--muted);font-size:14px}
 @media (max-width:980px){.hero{grid-template-columns:1fr}.photo{max-width:220px}.metrics{grid-template-columns:repeat(2,1fr)}.project,.grid{grid-template-columns:1fr}.project .carousel{order:2}.project .copy{order:1}.project h3{font-size:26px}}
-@media (max-width:640px){.wrap{width:min(100% - 24px,1180px)}.nav{height:auto;padding:14px 0}.navlinks{display:none}.cta{padding:10px 14px}.hero{padding-top:26px}.lead{font-size:17px}.metrics{grid-template-columns:1fr}.metric{min-height:124px}.project{padding:18px;border-radius:24px;gap:18px}.meta{margin-bottom:8px}.year{order:0}.project h3{font-size:24px}.carousel{border-radius:20px}.arrow{width:38px;height:38px}.section h2{font-size:30px}}
+@media (max-width:640px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric{padding:14px;min-height:125px}.metric strong{font-size:30px}.metric span{font-size:13px}.wrap{width:min(100% - 24px,1180px)}.nav{height:auto;padding:14px 0}.navlinks{display:none}.cta{padding:10px 14px}.hero{padding-top:26px}.lead{font-size:17px}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.metric{min-height:124px}.project{padding:18px;border-radius:24px;gap:18px}.meta{margin-bottom:8px}.year{order:0}.project h3{font-size:24px}.carousel{border-radius:20px}.arrow{width:38px;height:38px}.section h2{font-size:30px}}
+
+.project-cover{position:relative;display:block;min-height:275px;aspect-ratio:16/10;width:100%;border:0;border-radius:24px;overflow:hidden;cursor:zoom-in;background:linear-gradient(135deg,#142941,#29496a);padding:0;text-align:left;box-shadow:0 16px 42px rgba(12,33,62,.16)}
+.project-cover img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .32s ease}
+.project-cover img[hidden]{display:none}
+.project-cover:hover img{transform:scale(1.045)}
+.cover-badge{position:absolute;bottom:16px;left:16px;background:rgba(10,24,41,.82);backdrop-filter:blur(9px);color:#fff;border:1px solid rgba(255,255,255,.16);padding:10px 14px;border-radius:12px;font-size:13px;font-weight:750}
+.cover-fallback{color:white;font-weight:800;font-size:22px;text-align:center;padding:80px 20px;display:block}
+.cover-fallback[hidden]{display:none}
+.media-dialog{width:min(1120px,calc(100vw - 24px));max-width:none;max-height:calc(100dvh - 24px);padding:0;border:1px solid rgba(255,255,255,.18);border-radius:23px;background:#0b1424;color:#fff;box-shadow:0 24px 80px #07102399;overflow:hidden}
+.media-dialog::backdrop{background:rgba(5,13,26,.86);backdrop-filter:blur(8px)}
+.dialog-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;background:#111d2f}
+.dialog-head strong{font-size:16px;line-height:1.3}
+.dialog-close{font-size:27px;line-height:1;border:0;border-radius:50%;background:#263852;color:#fff;width:38px;height:38px;cursor:pointer}
+.modal-stage{position:relative;height:min(73dvh,760px);display:flex;align-items:center;justify-content:center;overflow:hidden;background:#080e19}
+.modal-stage>img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.modal-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:#111d2f}
+.modal-dots{display:flex;flex-wrap:wrap;gap:7px;justify-content:center;flex:1}
+.modal-dot{width:9px;height:9px;background:#60718a;border:0;border-radius:50%;padding:0;cursor:pointer}
+.modal-dot.selected{background:#68a4ff;transform:scale(1.2)}
+.modal-nav{border:1px solid #314666;border-radius:12px;background:#20314a;color:#fff;font-size:25px;width:44px;height:40px;cursor:pointer}
+.modal-nav[hidden]{display:none}
+.modal-counter{font-size:13px;color:#b2c2d8;min-width:50px;text-align:right}
+.embedded-video{display:flex;flex-direction:column;width:min(100%,1080px);height:100%;justify-content:center;align-items:center;gap:8px;padding:14px}
+.embedded-video iframe{display:block;width:100%;max-height:calc(100% - 36px);aspect-ratio:16/9;background:#000;border:0;border-radius:10px}
+.embedded-video a{color:#aaccff;font-size:13px}
+body.modal-open{overflow:hidden}
+@media(max-width:640px){.project-cover{min-height:190px;aspect-ratio:16/10}.modal-stage{height:min(69dvh,620px)}.media-dialog{border-radius:14px}.dialog-head{padding:9px 12px}}
 </style>
 </head>
 <body>
@@ -95,29 +122,23 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,251,255,.82);backdro
       <span class="eyebrow">Unity / C# · Game Architecture · Technical Leadership</span>
       <h1>Михаил Потапов</h1>
       <div class="role">Lead Unity Developer / Technical Lead</div>
-      <p class="lead">Я создаю коммерческие игры с 2011 года, а с 2014 года веду техническое руководство. Моя сильная сторона — совмещать hands-on разработку на Unity с архитектурными решениями, PvP-механиками, мобильной оптимизацией и управлением небольшой командой.</p>
-      <ul class="highlights">
-        <li>13 выпущенных проектов</li>
-        <li>Команды до 5 разработчиков</li>
-        <li>Игры с 1M+ и 3M+ загрузок</li>
-        <li>InfinityGames → Taptics → MIDcore</li>
-      </ul>
+      <p class="lead">Я создаю коммерческие игры с 2011 года и руковожу разработкой с 2014-го. Сам пишу код на Unity, проектирую игровые системы и занимаюсь оптимизацией. Организую работу команды и отвечаю за качество технических решений.</p>
     </div>
   </section>
 
   <section class="wrap">
     <div class="metrics">
-      <div class="metric"><strong>2011</strong><span>Начало коммерческой разработки</span></div>
+      <div class="metric"><strong>4 млн+</strong><span>Суммарных загрузок игр</span></div>
       <div class="metric"><strong>2014</strong><span>Начало технического руководства</span></div>
       <div class="metric"><strong>до 5</strong><span>Разработчиков в команде</span></div>
-      <div class="metric"><strong>13</strong><span>Выпущенных игровых проектов</span></div>
+      <div class="metric"><strong>13+</strong><span>Выпущенных игровых проектов</span></div>
     </div>
   </section>
 
   <section class="wrap section" id="projects">
     <span class="eyebrow">Selected Work</span>
-    <h2>Проекты — в обратной хронологии</h2>
-    <p class="lead2">Ниже — ключевые проекты от последних к ранним. Для каждого проекта я разделил описание самой игры и мой личный вклад, а скриншоты собрал в карусель. Последний слайд в карусели — ссылка на видео, если оно есть.</p>
+    <h2>Проекты</h2>
+    
     <div id="project-list" class="project-list"></div>
   </section>
 
@@ -129,7 +150,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,251,255,.82);backdro
         <h3>Одна студия — три названия</h3>
         <p><strong>InfinityGames → Taptics → MIDcore</strong> — это одна студия, которая проходила через ребрендинг. Я рос внутри неё от Unity-разработчика до технического руководителя и сооснователя.</p>
         <p>Работал с жанрами <strong>match-3, idle/clicker, word games, quiz, party games</strong> и многопользовательскими режимами. Отвечал за архитектуру, клиент-серверное взаимодействие, выпуск релизов, постановку задач и code review.</p>
-        <div class="publishers">
+        <p><strong>Сотрудничество с издателями.</strong> Работал над коммерческими играми совместно с издателями: участвовал в согласовании технических требований, подготовке релизов и развитии проектов.</p><div class="publishers">
           <span class="publisher">HeroCraft</span>
           <span class="publisher">AppQuantum</span>
           <span class="publisher">MadPixel</span>
@@ -156,56 +177,78 @@ header{position:sticky;top:0;z-index:20;background:rgba(247,251,255,.82);backdro
       <a class="btn secondary" href="tel:+79047601108">+7 904 760-11-08</a>
     </div>
   </section>
-</main>
+</main><dialog id="media-dialog" class="media-dialog" aria-labelledby="lightbox-title"><div class="dialog-head"><strong id="lightbox-title">Галерея</strong><button class="dialog-close" type="button" aria-label="Закрыть" onclick="document.getElementById('media-dialog').close()">×</button></div><div class="modal-stage" id="lightbox-stage"></div><div class="modal-controls"><button class="modal-nav" id="lightbox-prev" type="button" aria-label="Назад">‹</button><div class="modal-dots" id="lightbox-dots"></div><button class="modal-nav" id="lightbox-next" type="button" aria-label="Вперёд">›</button><span class="modal-counter" id="lightbox-counter"></span></div></dialog>
 <footer class="wrap footer">© Михаил Потапов · Портфолио для GitHub Pages</footer>
-<script>const PROJECTS = [{"year": 2026, "title": "Пираты и Пазлы 2 PvP Три в Ряд", "about": "Мультиплеерная PvP match-3 игра на пиратскую тематику с RPG-прогрессией, развитием корабля и команды, а также соревновательным ladder-режимом.", "contribution": "Разрабатывал Unity-клиент, ключевые игровые системы и PvP-механику. Проектировал клиент-серверное взаимодействие и координировал серверного разработчика.", "platforms": "Google Play · App Store · Яндекс Игры · RuStore", "chips": ["Unity", "PvP", "Match-3", "HeroCraft"], "images": ["https://play-lh.googleusercontent.com/HyvpDKmlZ7uYStdGd2fWVGDLys9gVcZin-_M0sDCUtAgj-dz_-23uty73nHLyPR08VfSZOfxWwm0WhN8dfzv=w5120-h2880-rw", "https://play-lh.googleusercontent.com/n1wM1G5_AeNxrinrxiN5_Xg59dA0MOD2uVNreBZJVjb12sewqr2-zah45ULEx0gXUJTQF2YSktj757omxs4asw=w5120-h2880-rw", "https://play-lh.googleusercontent.com/EysXnXSBGTNxyvdI3dwFTgb7sv73ap-BUx-qL0mt6c4xA8MFnsacuga_jBhOr6oQ9CXgv4n84PPsEhN-WYdwM3g=w5120-h2880-rw", "https://play-lh.googleusercontent.com/3-CTzm9yA-3b65Y2ZJgMqkn-NWaApgclQI7CNVMNKyO3Ox4hXd-PUcIe9hjmZxoRUmFGDJU6fR2CSwQJyUW2Aw=w5120-h2880-rw"], "video": "https://www.youtube.com/watch?v=tL_BANVguL8"}, {"year": 2025, "title": "MemeBattle: Что за мем?", "about": "Цифровая версия настольной игры «Что за мем?» с упором на быстрые весёлые раунды и party-формат.", "contribution": "Лид-программист: контролировал клиентского разработчика, принимал технические решения и участвовал в реализации игровых систем.", "platforms": "Google Play · App Store · Яндекс Игры · CrazyGames", "chips": ["Unity", "Party Game", "Lead"], "images": ["https://play-lh.googleusercontent.com/TZqwdLLkDlMbDwkk6KOxlQKNXxAtootKU8tT70tqFiF86QlF1vDbCmu7qC2atc4glePcc78R0Sx66tC5a-zN=w5120-h2880-rw", "https://play-lh.googleusercontent.com/81fc1xMCElrGgfesV4cr5m42jxnwk7LVRij-jpy7N0b6t6nWhcXnsp_5qizRjU8vsId-XjSF5SU9IGZTQLZlUOE=w5120-h2880-rw", "https://play-lh.googleusercontent.com/bClRSxQ5rKrVVHdJOEs6Pgl4gADG_mgRiSZ7e6MAJab72xBVqnlgZki_A6G_yR4RqSDzpZgUnk7NyENRQVuNHQ=w5120-h2880-rw", "https://play-lh.googleusercontent.com/r32DQ70eg-6XJPJbxPZIhPiM0x1MDA9N8sY-BbwehXQ_r6_1MXNSDpRLkVAcgmqX9Os88Aex8uUPDW531edeLw=w5120-h2880-rw", "https://play-lh.googleusercontent.com/iKwZG4yzMBwPq4Su7peFV5m30mRdjTy5DhCriqsoQ-zWfjmS_A6ol2-yag1oXRhAdYhKAZ7jZs-VwTDlauPYMQ=w5120-h2880-rw"], "video": "https://www.youtube.com/watch?v=unLjCPl_Bts"}, {"year": 2025, "title": "А ты шаришь!", "about": "Мультиплеерная викторина, в которой игроки соревнуются, собирая собственную машину времени быстрее соперников.", "contribution": "Лид-программист: контролировал клиентского разработчика, помогал с архитектурой и реализацией клиентской части.", "platforms": "Google Play · App Store · VK Play", "chips": ["Unity", "Quiz", "Multiplayer"], "images": ["https://play-lh.googleusercontent.com/SsNROjEFL7V2vu0fqvlmRLX4Akjd3kyuwh_1OicH3vO_fslR8XKqdo1SnqaKZ8MfFLanwJe2w6USEAXUXAjDRg=w5120-h2880-rw", "https://play-lh.googleusercontent.com/-lY67sLHHb3xEKRengX9_-RXedB127A6ZSG9kD-nyhDGWMVL-uj35Ylzc_9SI_qZTG9Wv6JupqzQ_h1h5yFB=w5120-h2880-rw", "https://play-lh.googleusercontent.com/z9vW4sW07snJ3p3Bi-XTrXSODGrtsAZdrm9R3ds_8xOwq6rwHUEtoq5mjno0YLoby_lhHcbPFVR1nNZi09AqQQ=w5120-h2880-rw", "https://play-lh.googleusercontent.com/lNp8UWBPWc_sc3CAVazQ8geEXPDywFowH_-PCW-jd6qouZ8FiXJ5SZFIbiOL9IWgmJzwJo-lpfqrBRawbpBT=w5120-h2880-rw"], "video": ""}, {"year": 2024, "title": "Pirates & Puzzles: Tournament Mode", "about": "Специальная версия игры для соревнований по дисциплине «соревновательная головоломка» под эгидой <a href=\"https://resf.ru/\" target=\"_blank\" rel=\"noopener noreferrer\">ФКС России</a>.", "contribution": "Лид-программист: контролировал серверного разработчика, прорабатывал соревновательную логику, client-server flow и взаимодействие по socket / WebSocket.", "platforms": "Google Play · App Store", "chips": ["Unity", "Tournament", "WebSocket", "ФКС России"], "images": ["https://play-lh.googleusercontent.com/AW4tC89cC5R7wJXIIP2Khf6GRdKVAf47qSu6PRyz3zs3doZcOcvG3MV4QM6-B5edmohzAXwojxTdh138OCO8=w5120-h2880-rw", "https://play-lh.googleusercontent.com/BSvj2B_5LU7iRWEMEOF4NzsikGXdWAEvw0crsTiHoUhnnGHu7Jb-0tJ-3QyJnYY3Sn54IaGQglu0zs-YKE72uPg=w5120-h2880-rw", "https://play-lh.googleusercontent.com/g8QEJ1j_Ikv-ZqFUt4U8edHSTnzSnerK7LLMrKKvgzz7Z70KS6TFtBZ5UTwoXfb347VNtkcgDd9UeagfaW2W=w5120-h2880-rw", "https://play-lh.googleusercontent.com/YVEz5JsPzKAFUySrn7mC90KgaGSPICWoGYWWePR-gTpqI6ueRKto08bwHPpi6T2aV3oMyBOQInqcoaQXS6LG=w5120-h2880-rw"], "video": "https://vksport.vkvideo.ru/live-14046705_456243304"}, {"year": 2023, "title": "Monsters Crush Clicker", "about": "Фэнтезийный idle-clicker / RPG-проект для мобильных платформ и веба с непрерывным уничтожением волн монстров и титанов-боссов.", "contribution": "Проектировал архитектуру с нуля и руководил командой до 3 клиентских разработчиков.", "platforms": "Google Play · App Store · Яндекс Игры · CrazyGames", "chips": ["Unity", "Idle", "Architecture", "Web"], "images": ["https://img.utdstc.com/screen/146/659/14665949ccebd6d9db0bfbd7135d4614de8ff334b17f987d060cd280a8426a9c:800", "https://img.utdstc.com/screen/25a/76f/25a76fe9ecee92b78dc9a98c03929b91891e73f6722385819c6193aef572547a:800", "https://img.utdstc.com/screen/2b9/b2e/2b9b2e9436c5b2cb4facdecd42eae4661d1677d3f64159163e8c0db4de2e9972:800", "https://img.utdstc.com/screen/f49/092/f49092bc5dfb25cffbee0a7d5beead3f851f3f77c3c9433d88b657f843550a4b:800", "https://img.utdstc.com/screen/1c1/669/1c16693990758030ab6e8b0937ba37517916b420993306a4232f0de7b94ffe69:800"], "video": "https://runtime.strm.yandex.ru/player/video/vplvrggyc5rw7vuz4djm?loop=1&mute=1&from=yagames&autoplay=1&preview=0&play_on_visible=0.3&hidden=*&event_prefix=gamepage:"}, {"year": 2020, "title": "Pirates & Puzzles: Ship Battles", "about": "Флагманский PvP match-3/RPG-проект в пиратском сеттинге, выпущенный вместе с HeroCraft. Коммерчески успешный live-продукт с аудиторией более 1 млн загрузок.", "contribution": "Lead Developer: проектировал архитектуру клиента, контролировал до 2 серверных и до 3 клиентских программистов, отвечал за технические решения и выпуск релизов.", "platforms": "Google Play · App Store · Huawei AppGallery · RuStore", "chips": ["Unity", "PvP", "Match-3", "1M+ downloads"], "images": ["https://play-lh.googleusercontent.com/vORjLpEr_RwbUp7J1ieXOkCBfSvr1yQZ504M3b9ZeKRs30ceXjTirZCuJD3o4NQQrcQQzsHIwoWRkYSASz9FUA=w5120-h2880-rw", "https://play-lh.googleusercontent.com/wFpw9ocezS0UXeLy8Qo3ai_UXvCg1FxENnac-14K9EUYOHSepbXJam5Duvj6Vx60wFDHXN52icbUa8ksb5_0Xqg=w5120-h2880-rw", "https://play-lh.googleusercontent.com/HUi3pKBEVHePneTbrMcz4VkaVVWPjQMxP2JpJtHh8Z4fYn7pzICEDp-evUP5y5GJ25H_iRIT7y6wENAFnpbBnQ=w5120-h2880-rw", "https://play-lh.googleusercontent.com/CuDgkfvVNVkQoddoS1oWJr08ZlN45rcjjQy0huHwlvIhCyMtu4J-tBYLmAkJe4Jz-LVbb-5DUvp_Tx0v7-HIDg=w5120-h2880-rw", "https://play-lh.googleusercontent.com/TZKbVxEaBAcZ5739J7EINo3PY0Sx9Cg10hAIm-XJCIB7PGBqP1yGjUKMc85VVO7S70XK-L264Wry2jyGDLst=w5120-h2880-rw"], "video": "https://www.youtube.com/watch?v=Jk3rzKlzjKo"}, {"year": 2017, "title": "Marmok’s Team Monster Crush", "about": "Совместный с Mr. Marmok мобильный clicker/RPG с чатами, турнирами, кланами и осадами. Проект преодолел отметку в 3 млн загрузок.", "contribution": "Разрабатывал клиентскую часть и координировал серверного разработчика. После активной фазы проект был передан на поддержку другому программисту.", "platforms": "Google Play · App Store", "chips": ["Unity", "RPG", "3M+ downloads"], "images": ["https://cdn.aptoide.com/imgs/6/6/2/662151627647080e9f3ffe70d0f8e7ea_screen.png", "https://cdn.aptoide.com/imgs/2/1/5/2150d0b362bfcd0b555d7fb44159406e_screen.png", "https://cdn.aptoide.com/imgs/8/9/8/898cf8d1c4c89be2bde1a3d639e60000_screen.png", "https://cdn.aptoide.com/imgs/d/1/6/d162b81e79f836c9aea453374f3de5c8_screen.png"], "video": "https://www.youtube.com/watch?v=awwQQzunM2w"}, {"year": 2017, "title": "Tanktoon RanZar Coloring", "about": "Тематическая мобильная игра-раскраска по мотивам популярного YouTube-проекта «RanZar — Рандомные Зарисовки».", "contribution": "Самостоятельно вёл проект со стороны Unity-клиента и общей технической реализации.", "platforms": "Google Play · App Store", "chips": ["Unity", "Coloring", "Mobile"], "images": ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhnwOSCnB5cSWqq8pqyzc1GUtnDaTeIESmUIpAlvsWYJ0Ou96G568xhg&s=10", "https://cdn.soft112.com/tanktoon-ranzar-coloring/00/00/0H/EJ/00000HEJ9E/pad_screenshot_2.png", "https://cdn.xiaohei.com/games/upload/2024-12-03/bfg30z1uzh4_582.jpg", "https://cdn.xiaohei.com/games/upload/2024-12-03/k0g0ixwryqc_587.jpg"], "video": "https://www.youtube.com/watch?v=GGfRhLYrrLI"}, {"year": 2016, "title": "Wordica", "about": "Развитие идей WordBox: режим прохождения, карта мира, сотни уровней, новые бустеры и интеграция с ВКонтакте; озвучка — Mr. Marmok.", "contribution": "Вёл разработку клиента и проектирование взаимодействия с серверной частью.", "platforms": "Google Play · App Store", "chips": ["Unity", "Word Game", "Social"], "images": ["https://images.sftcdn.net/images/t_app-cover-s,f_auto/p/c46f75aa-0cce-4bb8-8150-db89e1aa2907/1030090608/wordica-screenshot.png", "https://cdn.aptoide.com/imgs/2/2/b/22b301a96eb51d0e836ab152efd1f5cf_screen.png", "https://cdn.aptoide.com/imgs/8/d/e/8de2288156cb4a3d868d8ad5205a8844_screen.png", "https://cdn.aptoide.com/imgs/3/f/b/3fb4fd6742e6f8b189d005e307d6be04_screen.png"], "video": "https://www.youtube.com/watch?v=IBJZ0IWkkgY"}, {"year": 2015, "title": "FlipStone", "about": "Головоломка на основе активации и переворачивания цветных камней. Включала режим приключения и выживания.", "contribution": "Самостоятельно вёл Unity-разработку и контролировал реализацию серверной части.", "platforms": "Google Play · App Store", "chips": ["Unity", "Puzzle", "Gameplay"], "images": ["https://image-eo.winudf.com/v2/image/Y29tLmxpa2VpdGdhbWVzLmZsaXBzdG9uZV9zY3JlZW5fMF8xNTM3OTA1MjEwXzAxOQ/screen-0.webp?fakeurl=1&type=.webp", "https://image-eo.winudf.com/v2/image/Y29tLmxpa2VpdGdhbWVzLmZsaXBzdG9uZV9zY3JlZW5fMV8xNTM3OTA1MjEyXzAyNw/screen-1.webp?fakeurl=1&type=.webp", "https://image-eo.winudf.com/v2/image/Y29tLmxpa2VpdGdhbWVzLmZsaXBzdG9uZV9zY3JlZW5fMl8xNTM3OTA1MjE0XzA1NQ/screen-2.webp?fakeurl=1&type=.webp"], "video": "https://www.youtube.com/watch?v=X_4CLxdGrpE"}, {"year": 2013, "title": "WordBox", "about": "Первая собственная независимая разработка. Игра получила feature от Apple и была отмечена как игра месяца одним из английских изданий.", "contribution": "Самостоятельная разработка ключевой идеи, реализации и релиза проекта.", "platforms": "Google Play · App Store", "chips": ["Indie", "Word Game", "Apple Featured"], "images": ["https://tataram.ru/wp-content/uploads/2013/10/311.jpg", "https://www.idow.ru/uploads/posts/2013-01/1359101689_02_ru.jpg", "https://www.idow.ru/uploads/posts/2013-01/1359101694_04_ru.jpg", "https://www.idow.ru/uploads/posts/2013-01/1359101616_05_ru.jpg"], "video": "https://www.youtube.com/watch?v=JgXBwhsTsAI"}, {"year": 2012, "title": "UniFight", "about": "Файтинг для Универсиады 2013 — продолжение приключений барсика UNI в формате боевых единоборств.", "contribution": "Программирование, сборка UI и игровых уровней, тестирование.", "platforms": "Google Play · App Store", "chips": ["Unity", "Fighting", "Mobile"], "images": ["https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzBfM2UwNzY5MGE/screen-0.webp?fakeurl=1&type=.webp", "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzFfNzMyYWY3MGY/screen-1.webp?fakeurl=1&type=.webp", "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzJfYzg3MzAwNGU/screen-2.webp?fakeurl=1&type=.webp"], "video": "https://www.youtube.com/watch?v=BtoOChnZ_ZI"}, {"year": 2011, "title": "UniCross", "about": "Платформер для Универсиады 2013 о приключениях барсика UNI, который несёт огонь Универсиады в Казань.", "contribution": "Программирование, сборка UI и уровней, тестирование.", "platforms": "Google Play · App Store", "chips": ["Unity", "Platformer", "Mobile"], "images": ["https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzBfY2FjYTRhMmE/screen-0.webp?fakeurl=1&type=.webp", "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzFfNGMwYmZkNDE/screen-1.webp?fakeurl=1&type=.webp", "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzJfYjcyOThlYTI/screen-2.webp?fakeurl=1&type=.webp"], "video": "https://www.youtube.com/watch?v=FwX-JgGAtRo"}]; 
-function buildCarousel(items, title){
-  const wrap=document.createElement('div'); wrap.className='carousel';
-  const stage=document.createElement('div'); stage.className='stage';
-  const slides=[];
-  items.forEach((item,idx)=>{
-    const slide=document.createElement('div'); slide.className='slide'+(idx===0?' active':'');
-    if(item.type==='image'){
-      const img=document.createElement('img'); img.src=item.src; img.alt=title+' — screenshot '+(idx+1); img.loading='lazy';
-      img.onerror=()=>{ slide.remove(); }
-      slide.appendChild(img);
-    }else{
-      slide.classList.add('video-slide');
-      const card=document.createElement('div'); card.className='video-card';
-      card.innerHTML='<div class="play">▶</div><h4 style="margin:0;font-size:28px">Видео проекта</h4><p>Открыть геймплей, трейлер или запись матча в новой вкладке.</p><a href="'+item.src+'" target="_blank" rel="noopener noreferrer">Смотреть видео ↗</a>';
-      slide.appendChild(card);
-    }
-    stage.appendChild(slide); slides.push(slide);
-  });
-  wrap.appendChild(stage);
-  if(slides.length>1){
-    const prev=document.createElement('button'); prev.className='arrow prev'; prev.setAttribute('aria-label','Назад'); prev.textContent='‹';
-    const next=document.createElement('button'); next.className='arrow next'; next.setAttribute('aria-label','Вперёд'); next.textContent='›';
-    wrap.append(prev,next);
-    const dots=document.createElement('div'); dots.className='dots';
-    let current=0;
-    const dotEls=slides.map((_,i)=>{const d=document.createElement('button'); d.className='dot'+(i===0?' active':''); d.setAttribute('aria-label','Слайд '+(i+1)); d.onclick=()=>show(i); dots.appendChild(d); return d;});
-    function show(i){ current=(i+slides.length)%slides.length; slides.forEach((s,idx)=>s.classList.toggle('active',idx===current)); dotEls.forEach((d,idx)=>d.classList.toggle('active',idx===current)); }
-    prev.onclick=()=>show(current-1); next.onclick=()=>show(current+1);
-    wrap.appendChild(dots);
-  }
-  return wrap;
+<script>const PROJECTS = [{"year":2026,"title":"Пираты и Пазлы 2 PvP Три в Ряд","about":"Мультиплеерная PvP match-3 игра на пиратскую тематику с RPG-прогрессией, развитием корабля и команды, а также соревновательным ladder-режимом.","contribution":"Разрабатывал Unity-клиент, ключевые игровые системы и PvP-механику. Проектировал клиент-серверное взаимодействие и координировал серверного разработчика.","platforms":"Google Play · App Store · Яндекс Игры · RuStore","chips":["Unity","PvP","Match-3","HeroCraft"],"images":["https://play-lh.googleusercontent.com/HyvpDKmlZ7uYStdGd2fWVGDLys9gVcZin-_M0sDCUtAgj-dz_-23uty73nHLyPR08VfSZOfxWwm0WhN8dfzv=w5120-h2880-rw","https://play-lh.googleusercontent.com/n1wM1G5_AeNxrinrxiN5_Xg59dA0MOD2uVNreBZJVjb12sewqr2-zah45ULEx0gXUJTQF2YSktj757omxs4asw=w5120-h2880-rw","https://play-lh.googleusercontent.com/EysXnXSBGTNxyvdI3dwFTgb7sv73ap-BUx-qL0mt6c4xA8MFnsacuga_jBhOr6oQ9CXgv4n84PPsEhN-WYdwM3g=w5120-h2880-rw","https://play-lh.googleusercontent.com/3-CTzm9yA-3b65Y2ZJgMqkn-NWaApgclQI7CNVMNKyO3Ox4hXd-PUcIe9hjmZxoRUmFGDJU6fR2CSwQJyUW2Aw=w5120-h2880-rw"],"video":"https://www.youtube.com/watch?v=tL_BANVguL8"},{"year":2025,"title":"MemeBattle: Что за мем?","about":"Цифровая версия настольной игры «Что за мем?» с упором на быстрые весёлые раунды и party-формат.","contribution":"Лид-программист: контролировал клиентского разработчика, принимал технические решения и участвовал в реализации игровых систем.","platforms":"Google Play · App Store · Яндекс Игры · CrazyGames","chips":["Unity","Party Game","Lead"],"images":["assets/projects/memebattle/01.jpg","assets/projects/memebattle/02.jpg","assets/projects/memebattle/03.jpg","assets/projects/memebattle/04.jpg","assets/projects/memebattle/05.jpg"],"video":"https://www.youtube.com/watch?v=unLjCPl_Bts"},{"year":2025,"title":"А ты шаришь!","about":"Мультиплеерная викторина, в которой игроки соревнуются, собирая собственную машину времени быстрее соперников.","contribution":"Лид-программист: контролировал клиентского разработчика, помогал с архитектурой и реализацией клиентской части.","platforms":"Google Play · App Store · VK Play","chips":["Unity","Quiz","Multiplayer"],"images":["assets/projects/aty-sharish/01.jpg","assets/projects/aty-sharish/02.jpg","assets/projects/aty-sharish/03.jpg","assets/projects/aty-sharish/04.jpg"],"video":""},{"year":2024,"title":"Pirates & Puzzles: Tournament Mode","about":"Специальная версия игры для соревнований по дисциплине «соревновательная головоломка» под эгидой <a href=\"https://resf.ru/\" target=\"_blank\" rel=\"noopener noreferrer\">ФКС России</a>.","contribution":"Лид-программист: контролировал серверного разработчика, прорабатывал соревновательную логику, client-server flow и взаимодействие по socket / WebSocket.","platforms":"Google Play · App Store","chips":["Unity","Tournament","WebSocket","ФКС России"],"images":["https://play-lh.googleusercontent.com/AW4tC89cC5R7wJXIIP2Khf6GRdKVAf47qSu6PRyz3zs3doZcOcvG3MV4QM6-B5edmohzAXwojxTdh138OCO8=w5120-h2880-rw","https://play-lh.googleusercontent.com/BSvj2B_5LU7iRWEMEOF4NzsikGXdWAEvw0crsTiHoUhnnGHu7Jb-0tJ-3QyJnYY3Sn54IaGQglu0zs-YKE72uPg=w5120-h2880-rw","https://play-lh.googleusercontent.com/g8QEJ1j_Ikv-ZqFUt4U8edHSTnzSnerK7LLMrKKvgzz7Z70KS6TFtBZ5UTwoXfb347VNtkcgDd9UeagfaW2W=w5120-h2880-rw","https://play-lh.googleusercontent.com/YVEz5JsPzKAFUySrn7mC90KgaGSPICWoGYWWePR-gTpqI6ueRKto08bwHPpi6T2aV3oMyBOQInqcoaQXS6LG=w5120-h2880-rw"],"video":"https://vksport.vkvideo.ru/live-14046705_456243304"},{"year":2023,"title":"Monsters Crush Clicker","about":"Фэнтезийный idle-clicker / RPG-проект для мобильных платформ и веба с непрерывным уничтожением волн монстров и титанов-боссов.","contribution":"Проектировал архитектуру с нуля и руководил командой до 3 клиентских разработчиков.","platforms":"Google Play · App Store · Яндекс Игры · CrazyGames","chips":["Unity","Idle","Architecture","Web"],"images":["https://img.utdstc.com/screen/146/659/14665949ccebd6d9db0bfbd7135d4614de8ff334b17f987d060cd280a8426a9c:800","https://img.utdstc.com/screen/25a/76f/25a76fe9ecee92b78dc9a98c03929b91891e73f6722385819c6193aef572547a:800","https://img.utdstc.com/screen/2b9/b2e/2b9b2e9436c5b2cb4facdecd42eae4661d1677d3f64159163e8c0db4de2e9972:800","https://img.utdstc.com/screen/f49/092/f49092bc5dfb25cffbee0a7d5beead3f851f3f77c3c9433d88b657f843550a4b:800","https://img.utdstc.com/screen/1c1/669/1c16693990758030ab6e8b0937ba37517916b420993306a4232f0de7b94ffe69:800"],"video":"https://runtime.strm.yandex.ru/player/video/vplvrggyc5rw7vuz4djm?loop=1&mute=1&from=yagames&autoplay=1&preview=0&play_on_visible=0.3&hidden=*&event_prefix=gamepage:"},{"year":2020,"title":"Pirates & Puzzles: Ship Battles","about":"Флагманский PvP match-3/RPG-проект в пиратском сеттинге, выпущенный вместе с HeroCraft. Коммерчески успешный live-продукт с аудиторией более 1 млн загрузок.","contribution":"Lead Developer: проектировал архитектуру клиента, контролировал до 2 серверных и до 3 клиентских программистов, отвечал за технические решения и выпуск релизов.","platforms":"Google Play · App Store · Huawei AppGallery · RuStore","chips":["Unity","PvP","Match-3","1M+ downloads"],"images":["https://play-lh.googleusercontent.com/vORjLpEr_RwbUp7J1ieXOkCBfSvr1yQZ504M3b9ZeKRs30ceXjTirZCuJD3o4NQQrcQQzsHIwoWRkYSASz9FUA=w5120-h2880-rw","https://play-lh.googleusercontent.com/wFpw9ocezS0UXeLy8Qo3ai_UXvCg1FxENnac-14K9EUYOHSepbXJam5Duvj6Vx60wFDHXN52icbUa8ksb5_0Xqg=w5120-h2880-rw","https://play-lh.googleusercontent.com/HUi3pKBEVHePneTbrMcz4VkaVVWPjQMxP2JpJtHh8Z4fYn7pzICEDp-evUP5y5GJ25H_iRIT7y6wENAFnpbBnQ=w5120-h2880-rw","https://play-lh.googleusercontent.com/CuDgkfvVNVkQoddoS1oWJr08ZlN45rcjjQy0huHwlvIhCyMtu4J-tBYLmAkJe4Jz-LVbb-5DUvp_Tx0v7-HIDg=w5120-h2880-rw","https://play-lh.googleusercontent.com/TZKbVxEaBAcZ5739J7EINo3PY0Sx9Cg10hAIm-XJCIB7PGBqP1yGjUKMc85VVO7S70XK-L264Wry2jyGDLst=w5120-h2880-rw"],"video":"https://www.youtube.com/watch?v=Jk3rzKlzjKo"},{"year":2017,"title":"Marmok’s Team Monster Crush","about":"Совместный с Mr. Marmok мобильный clicker/RPG с чатами, турнирами, кланами и осадами. Проект преодолел отметку в 3 млн загрузок.","contribution":"Разрабатывал клиентскую часть и координировал серверного разработчика. После активной фазы проект был передан на поддержку другому программисту.","platforms":"Google Play · App Store","chips":["Unity","RPG","3M+ downloads"],"images":["assets/projects/marmok-monster-crush/01.jpg","assets/projects/marmok-monster-crush/02.jpg","assets/projects/marmok-monster-crush/03.jpg","assets/projects/marmok-monster-crush/04.jpg","assets/projects/marmok-monster-crush/05.jpg","assets/projects/marmok-monster-crush/06.jpg","assets/projects/marmok-monster-crush/07.jpg"],"video":"https://www.youtube.com/watch?v=awwQQzunM2w"},{"year":2017,"title":"Tanktoon RanZar Coloring","about":"Тематическая мобильная игра-раскраска по мотивам популярного YouTube-проекта «RanZar — Рандомные Зарисовки».","contribution":"Самостоятельно вёл проект со стороны Unity-клиента и общей технической реализации.","platforms":"Google Play · App Store","chips":["Unity","Coloring","Mobile"],"images":["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZhnwOSCnB5cSWqq8pqyzc1GUtnDaTeIESmUIpAlvsWYJ0Ou96G568xhg&s=10","https://cdn.soft112.com/tanktoon-ranzar-coloring/00/00/0H/EJ/00000HEJ9E/pad_screenshot_2.png","https://cdn.xiaohei.com/games/upload/2024-12-03/bfg30z1uzh4_582.jpg","https://cdn.xiaohei.com/games/upload/2024-12-03/k0g0ixwryqc_587.jpg"],"video":"https://www.youtube.com/watch?v=GGfRhLYrrLI"},{"year":2016,"title":"Wordica","about":"Развитие идей WordBox: режим прохождения, карта мира, сотни уровней, новые бустеры и интеграция с ВКонтакте; озвучка — Mr. Marmok.","contribution":"Вёл разработку клиента и проектирование взаимодействия с серверной частью.","platforms":"Google Play · App Store","chips":["Unity","Word Game","Social"],"images":["https://images.sftcdn.net/images/t_app-cover-s,f_auto/p/c46f75aa-0cce-4bb8-8150-db89e1aa2907/1030090608/wordica-screenshot.png","https://cdn.aptoide.com/imgs/2/2/b/22b301a96eb51d0e836ab152efd1f5cf_screen.png","https://cdn.aptoide.com/imgs/8/d/e/8de2288156cb4a3d868d8ad5205a8844_screen.png","https://cdn.aptoide.com/imgs/3/f/b/3fb4fd6742e6f8b189d005e307d6be04_screen.png"],"video":"https://www.youtube.com/watch?v=IBJZ0IWkkgY"},{"year":2015,"title":"FlipStone","about":"Головоломка на основе активации и переворачивания цветных камней. Включала режим приключения и выживания.","contribution":"Самостоятельно вёл Unity-разработку и контролировал реализацию серверной части.","platforms":"Google Play · App Store","chips":["Unity","Puzzle","Gameplay"],"images":["assets/projects/flipstone/01.jpg","assets/projects/flipstone/02.jpg","assets/projects/flipstone/03.jpg"],"video":"https://www.youtube.com/watch?v=X_4CLxdGrpE"},{"year":2013,"title":"WordBox","about":"Первая собственная независимая разработка. Игра получила feature от Apple и была отмечена как игра месяца одним из английских изданий.","contribution":"Самостоятельная разработка ключевой идеи, реализации и релиза проекта.","platforms":"Google Play · App Store","chips":["Indie","Word Game","Apple Featured"],"images":["assets/projects/wordbox/01.jpg","assets/projects/wordbox/02.jpg","assets/projects/wordbox/03.jpg","assets/projects/wordbox/04.jpg","assets/projects/wordbox/05.jpg","assets/projects/wordbox/06.jpg","assets/projects/wordbox/07.jpg","assets/projects/wordbox/08.jpg"],"video":"https://www.youtube.com/watch?v=JgXBwhsTsAI"},{"year":2012,"title":"UniFight","about":"Файтинг для Универсиады 2013 — продолжение приключений барсика UNI в формате боевых единоборств.","contribution":"Программирование, сборка UI и игровых уровней, тестирование.","platforms":"Google Play · App Store","chips":["Unity","Fighting","Mobile"],"images":["https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzBfM2UwNzY5MGE/screen-0.webp?fakeurl=1&type=.webp","https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzFfNzMyYWY3MGY/screen-1.webp?fakeurl=1&type=.webp","https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzJfYzg3MzAwNGU/screen-2.webp?fakeurl=1&type=.webp"],"video":"https://www.youtube.com/watch?v=BtoOChnZ_ZI"},{"year":2011,"title":"UniCross","about":"Платформер для Универсиады 2013 о приключениях барсика UNI, который несёт огонь Универсиады в Казань.","contribution":"Программирование, сборка UI и уровней, тестирование.","platforms":"Google Play · App Store","chips":["Unity","Platformer","Mobile"],"images":["https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzBfY2FjYTRhMmE/screen-0.webp?fakeurl=1&type=.webp","https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzFfNGMwYmZkNDE/screen-1.webp?fakeurl=1&type=.webp","https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzJfYjcyOThlYTI/screen-2.webp?fakeurl=1&type=.webp"],"video":"https://www.youtube.com/watch?v=FwX-JgGAtRo"}]; 
+
+const gallery = document.getElementById('media-dialog');
+const stage = document.getElementById('lightbox-stage');
+const dots = document.getElementById('lightbox-dots');
+const counter = document.getElementById('lightbox-counter');
+const heading = document.getElementById('lightbox-title');
+const back = document.getElementById('lightbox-prev');
+const forward = document.getElementById('lightbox-next');
+let currentItems=[],currentIndex=0,oldFocus=null;
+function embedLink(url){
+ const youtube=url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([A-Za-z0-9_-]{11})/);
+ if(youtube) return 'https://www.youtube-nocookie.com/embed/'+youtube[1]+'?rel=0';
+ const vk=url.match(/live(-?\d+)_(\d+)/);
+ if(vk)return 'https://vk.com/video_ext.php?oid='+vk[1]+'&id='+vk[2]+'&hd=2';
+ if(url.startsWith('https://runtime.strm.yandex.ru/player/video/'))return url;
+ return null;
 }
-const data = PROJECTS;
+function showSlide(idx){
+ if(!currentItems.length)return;
+ currentIndex=(idx+currentItems.length)%currentItems.length;
+ stage.replaceChildren();dots.replaceChildren();
+ const media=currentItems[currentIndex];
+ if(media.type==='image'){
+   const image=document.createElement('img');image.src=media.src;image.alt='Скриншот '+(currentIndex+1);
+   image.onerror=()=>{stage.replaceChildren();const p=document.createElement('p');p.textContent='Изображение временно недоступно';stage.append(p);};
+   stage.append(image);
+ }else{
+   const box=document.createElement('div');box.className='embedded-video';
+   const embedded=embedLink(media.src);
+   if(embedded){
+     const frame=document.createElement('iframe');frame.title='Видео проекта';frame.src=embedded;frame.referrerPolicy='strict-origin-when-cross-origin';
+     frame.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';frame.allowFullscreen=true;box.append(frame);
+   }
+   const link=document.createElement('a');link.href=media.src;link.target='_blank';link.rel='noopener noreferrer';link.textContent='Открыть видео на платформе ↗';box.append(link);stage.append(box);
+ }
+ for(let i=0;i<currentItems.length;i++){
+   const dot=document.createElement('button');dot.type='button';dot.className='modal-dot'+(i===currentIndex?' selected':'');
+   dot.setAttribute('aria-label',currentItems[i].type==='video'?'Видео':'Слайд '+(i+1));dot.onclick=()=>showSlide(i);dots.append(dot);
+ }
+ counter.textContent=(currentIndex+1)+' / '+currentItems.length;
+ back.hidden=currentItems.length<2;forward.hidden=currentItems.length<2;
+}
+function openGallery(p){
+ currentItems=p.images.map(src=>({type:'image',src}));
+ if(p.video)currentItems.push({type:'video',src:p.video});
+ if(!currentItems.length)return;
+ oldFocus=document.activeElement;heading.textContent=p.title;showSlide(0);gallery.showModal();document.body.classList.add('modal-open');
+}
+gallery.addEventListener('close',()=>{stage.replaceChildren();document.body.classList.remove('modal-open');oldFocus?.focus()});
+gallery.addEventListener('click',e=>{if(e.target===gallery)gallery.close()});
+back.onclick=()=>showSlide(currentIndex-1);
+forward.onclick=()=>showSlide(currentIndex+1);
+document.addEventListener('keydown',e=>{if(!gallery.open)return;if(e.key==='ArrowLeft'){e.preventDefault();showSlide(currentIndex-1)}else if(e.key==='ArrowRight'){e.preventDefault();showSlide(currentIndex+1)}});
 const list=document.getElementById('project-list');
-for(const p of data){
-  const card=document.createElement('article'); card.className='project';
-  const mediaItems = p.images.map(src=>({type:'image',src})); if(p.video) mediaItems.push({type:'video',src:p.video});
-  const carousel=buildCarousel(mediaItems,p.title);
-  const copy=document.createElement('div'); copy.className='copy';
-  copy.innerHTML = `
-    <div class="meta"><span class="year">${p.year}</span><span class="platforms">${p.platforms}</span></div>
-    <h3>${p.title}</h3>
-    <p><span class="label">О проекте.</span> ${p.about}</p>
-    <p><span class="label">Мой вклад.</span> ${p.contribution}</p>
-    <div class="tags">${p.chips.map(c=>`<span class="tag">${c}</span>`).join('')}</div>
-  `;
-  card.append(copy,carousel); list.appendChild(card);
+for(const p of PROJECTS){
+ const card=document.createElement('article');card.className='project';
+ const copy=document.createElement('div');copy.className='copy';
+ copy.innerHTML=`
+ <div class="meta"><span class="year">${p.year}</span><span class="platforms">${p.platforms}</span></div>
+ <h3>${p.title}</h3>
+ <p><span class="label">О проекте.</span> ${p.about}</p>
+ <p><span class="label">Мой вклад.</span> ${p.contribution}</p>
+ <div class="tags">${p.chips.map(c=>`<span class="tag">${c}</span>`).join('')}</div>`;
+ const cover=document.createElement('button');cover.type='button';cover.className='project-cover';cover.setAttribute('aria-label','Смотреть скриншоты и видео: '+p.title);
+ const image=document.createElement('img');image.src=p.images[0];image.alt='Скриншот '+p.title;image.loading='lazy';
+ const fallback=document.createElement('span');fallback.className='cover-fallback';fallback.textContent=p.title;fallback.hidden=true;
+ image.onerror=()=>{image.hidden=true;fallback.hidden=false};
+ const hint=document.createElement('span');hint.className='cover-badge';hint.textContent='Смотреть медиа ↗';
+ cover.append(image,fallback,hint);cover.onclick=()=>openGallery(p);card.append(copy,cover);list.append(card);
 }
 </script>
 </body>
