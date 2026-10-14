@@ -73,3 +73,7 @@ npm run build
 - Скачивание PDF; pdfinfo: три страницы A4; pdftotext: читаемый текст.
 
 Внешнее воспроизведение видео, соответствие оставленных ссылок реальным проектам и Nginx на внешнем сервере не проверены. Нагрузочные измерения и полноценный аудит доступности не выполнялись.
+
+## GitHub Pages
+
+`.github/workflows/pages.yml` собирает сайт и публикует `dist/` после изменений в `main`. В Settings → Pages → Build and deployment выберите **GitHub Actions**, если это ещё не настроено. Итоговый адрес: https://bleeerr.github.io/portfolio/. Статус публикации виден в Actions → Deploy portfolio to GitHub Pages. PDF и изображения входят в артефакт. Python в CI не требуется: готовый PDF сохранён в репозитории.
