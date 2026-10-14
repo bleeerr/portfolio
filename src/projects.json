@@ -2,14 +2,13 @@
   {
     "year": 2026,
     "title": "Пираты и Пазлы 2 PvP Три в Ряд",
-    "about": "Мультиплеерная PvP match-3 игра на пиратскую тематику с RPG-прогрессией, развитием корабля и команды, а также соревновательным ladder-режимом.",
-    "contribution": "Фулстек-разработка, контроль серверного программиста",
+    "about": "Многопользовательская Match-3 игра с PvP-сражениями в пиратском сеттинге. Игрок развивает корабль, улучшает команду и продвигается в рейтинге. Издатель — HeroCraft.",
+    "contribution": "Фулстек-разработка; координация и проверка работы серверного программиста.",
     "platforms": "Google Play, App Store, Яндекс Игры, RuStore",
     "chips": [
-      "Unity",
       "PvP",
       "Match-3",
-      "HeroCraft"
+      "RPG"
     ],
     "images": [
       "media/pirates-puzzles-2/pirates-puzzles-2_01.webp",
@@ -24,18 +23,17 @@
       "https://play-lh.googleusercontent.com/n1wM1G5_AeNxrinrxiN5_Xg59dA0MOD2uVNreBZJVjb12sewqr2-zah45ULEx0gXUJTQF2YSktj757omxs4asw=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/EysXnXSBGTNxyvdI3dwFTgb7sv73ap-BUx-qL0mt6c4xA8MFnsacuga_jBhOr6oQ9CXgv4n84PPsEhN-WYdwM3g=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/3-CTzm9yA-3b65Y2ZJgMqkn-NWaApgclQI7CNVMNKyO3Ox4hXd-PUcIe9hjmZxoRUmFGDJU6fR2CSwQJyUW2Aw=w5120-h2880-rw"
-    ]
+    ],
+    "genre": "PvP · Match-3 · RPG"
   },
   {
     "year": 2025,
     "title": "MemeBattle: Что за мем?",
-    "about": "Цифровая версия настольной игры «Что за мем?» с упором на быстрые весёлые раунды и party-формат.",
-    "contribution": "Лид-программист, контроль клиентского программиста",
+    "about": "Цифровая версия настольной игры «Что за мем?».",
+    "contribution": "Лид-программист: руководство и проверка работы клиентского программиста.",
     "platforms": "Google Play, App Store, Яндекс Игры, CrazyGames",
     "chips": [
-      "Unity",
-      "Party Game",
-      "Lead"
+      "Игра по мотивам настольной игры"
     ],
     "images": [
       "media/memebattle/memebattle_01.webp",
@@ -52,18 +50,17 @@
       "https://play-lh.googleusercontent.com/bClRSxQ5rKrVVHdJOEs6Pgl4gADG_mgRiSZ7e6MAJab72xBVqnlgZki_A6G_yR4RqSDzpZgUnk7NyENRQVuNHQ=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/r32DQ70eg-6XJPJbxPZIhPiM0x1MDA9N8sY-BbwehXQ_r6_1MXNSDpRLkVAcgmqX9Os88Aex8uUPDW531edeLw=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/iKwZG4yzMBwPq4Su7peFV5m30mRdjTy5DhCriqsoQ-zWfjmS_A6ol2-yag1oXRhAdYhKAZ7jZs-VwTDlauPYMQ=w5120-h2880-rw"
-    ]
+    ],
+    "genre": "Игра по мотивам настольной игры"
   },
   {
     "year": 2025,
     "title": "А ты шаришь!",
     "about": "Мультиплеерная викторина, в которой игроки соревнуются, собирая собственную машину времени быстрее соперников.",
-    "contribution": "Лид-программист, контроль клиентского программиста",
-    "platforms": "Google Play, App Store, VkGames",
+    "contribution": "Лид-программист: руководство и проверка работы клиентского программиста.",
+    "platforms": "Google Play, App Store, VK Games",
     "chips": [
-      "Unity",
-      "Quiz",
-      "Multiplayer"
+      "Мультиплеерная викторина"
     ],
     "images": [
       "media/aty-sharish/aty-sharish_01.webp",
@@ -78,19 +75,17 @@
       "https://play-lh.googleusercontent.com/-lY67sLHHb3xEKRengX9_-RXedB127A6ZSG9kD-nyhDGWMVL-uj35Ylzc_9SI_qZTG9Wv6JupqzQ_h1h5yFB=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/z9vW4sW07snJ3p3Bi-XTrXSODGrtsAZdrm9R3ds_8xOwq6rwHUEtoq5mjno0YLoby_lhHcbPFVR1nNZi09AqQQ=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/lNp8UWBPWc_sc3CAVazQ8geEXPDywFowH_-PCW-jd6qouZ8FiXJ5SZFIbiOL9IWgmJzwJo-lpfqrBRawbpBT=w5120-h2880-rw"
-    ]
+    ],
+    "genre": "Мультиплеерная викторина"
   },
   {
     "year": 2024,
     "title": "Pirates & Puzzles: Tournament Mode",
     "about": "Версия Pirates & Puzzles для соревнований по дисциплине «соревновательная головоломка» под эгидой Федерации компьютерного спорта России.",
-    "contribution": "Лид-программист, контроль серверного программиста",
+    "contribution": "Лид-программист: координация и проверка работы серверного программиста.",
     "platforms": "Google Play, App Store",
     "chips": [
-      "Unity",
-      "Tournament",
-      "WebSocket",
-      "ФКС России"
+      "Соревновательная головоломка"
     ],
     "images": [
       "media/tournament-mode/tournament-mode_01.webp",
@@ -105,19 +100,19 @@
       "https://play-lh.googleusercontent.com/BSvj2B_5LU7iRWEMEOF4NzsikGXdWAEvw0crsTiHoUhnnGHu7Jb-0tJ-3QyJnYY3Sn54IaGQglu0zs-YKE72uPg=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/g8QEJ1j_Ikv-ZqFUt4U8edHSTnzSnerK7LLMrKKvgzz7Z70KS6TFtBZ5UTwoXfb347VNtkcgDd9UeagfaW2W=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/YVEz5JsPzKAFUySrn7mC90KgaGSPICWoGYWWePR-gTpqI6ueRKto08bwHPpi6T2aV3oMyBOQInqcoaQXS6LG=w5120-h2880-rw"
-    ]
+    ],
+    "genre": "Соревновательная головоломка"
   },
   {
     "year": 2023,
     "title": "Monsters Crush Clicker",
     "about": "Фэнтезийный idle-clicker / RPG-проект для мобильных платформ и веба с непрерывным уничтожением волн монстров и титанов-боссов.",
-    "contribution": "Лид-программист, контроль до 3-х клиентских программистов",
+    "contribution": "Лид-программист: руководство командой до трёх клиентских программистов.",
     "platforms": "Google Play, App Store, Яндекс Игры, CrazyGames",
     "chips": [
-      "Unity",
       "Idle",
-      "Architecture",
-      "Web"
+      "Кликер",
+      "RPG"
     ],
     "images": [
       "media/monsters-crush-clicker/monsters-crush-clicker_01.webp",
@@ -135,18 +130,19 @@
       "https://img.utdstc.com/screen/f49/092/f49092bc5dfb25cffbee0a7d5beead3f851f3f77c3c9433d88b657f843550a4b:800",
       "https://img.utdstc.com/screen/1c1/669/1c16693990758030ab6e8b0937ba37517916b420993306a4232f0de7b94ffe69:800",
       "https://img.utdstc.com/screen/6fb/1d9/6fb1d9aa096b5cc8539d92dd9c51ecd6d254caf2b12629437e0988f3f963bad6:800"
-    ]
+    ],
+    "genre": "Idle · Кликер · RPG"
   },
   {
     "year": 2020,
     "title": "Pirates & Puzzles: Ship Battles",
-    "about": "PvP Match-3 с RPG-прогрессией в пиратском сеттинге, выпущенный с HeroCraft. По исходному резюме игра приближается к 1,5 млн скачиваний в Google Play.",
-    "contribution": "Лид-программист, контроль до 2-х серверных и до 3-х клиентских программистов",
-    "platforms": "Google Play, App Store, Huaway Store, RuStore",
+    "about": "Многопользовательская Match-3 игра с PvP-сражениями и RPG-прогрессией в пиратском сеттинге. Издатель — HeroCraft.",
+    "contribution": "Лид-программист: руководство командой до двух серверных и трёх клиентских программистов.",
+    "platforms": "Google Play, App Store, Huawei AppGallery, RuStore",
     "chips": [
-      "Unity",
       "PvP",
-      "Match-3"
+      "Match-3",
+      "RPG"
     ],
     "images": [
       "media/ship-battles/ship-battles_01.webp",
@@ -165,18 +161,18 @@
       "https://play-lh.googleusercontent.com/CuDgkfvVNVkQoddoS1oWJr08ZlN45rcjjQy0huHwlvIhCyMtu4J-tBYLmAkJe4Jz-LVbb-5DUvp_Tx0v7-HIDg=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/TZKbVxEaBAcZ5739J7EINo3PY0Sx9Cg10hAIm-XJCIB7PGBqP1yGjUKMc85VVO7S70XK-L264Wry2jyGDLst=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/uWi8t4hCVjMawrkfJJqbLDXPyjlSQcptBztmXgMJHyWckPG-IwXvL9sv4wN5VmqRB9qttSQVwq2OOP0e0_RQ8BM=w5120-h2880-rw"
-    ]
+    ],
+    "genre": "PvP · Match-3 · RPG"
   },
   {
     "year": 2017,
     "title": "Marmok’s Team Monster Crush",
-    "about": "Совместный с Mr. Marmok мобильный clicker/RPG с чатами, турнирами, кланами и осадами. Проект преодолел отметку в 3 млн загрузок.",
-    "contribution": "Фулстек-разработка, контроль серверного программиста. Далее проект ушел на поддержку другому программисту",
+    "about": "Мобильный кликер с элементами RPG, созданный совместно с Mr. Marmok. В игре есть чаты, турниры, кланы и механика осад. Более 3 млн скачиваний.",
+    "contribution": "Фулстек-разработка; координация серверного программиста. Позднее поддержку проекта передали другому разработчику.",
     "platforms": "Google Play, App Store",
     "chips": [
-      "Unity",
-      "RPG",
-      "3M+ downloads"
+      "Кликер",
+      "RPG"
     ],
     "images": [
       "media/marmok-monster-crush/marmok-monster-crush_01.webp",
@@ -197,18 +193,17 @@
       "https://cdn.aptoide.com/imgs/c/9/b/c9b997c8776de1c9088889a1bea02d2e_screen.png",
       "https://cdn.aptoide.com/imgs/f/d/f/fdf1c14abb6873a9aae1a80d77a42bf2_screen.png",
       "https://cdn.aptoide.com/imgs/e/f/9/ef91fbcdd6d424969ec47b7f60b3b0d9_screen.png"
-    ]
+    ],
+    "genre": "Кликер · RPG"
   },
   {
     "year": 2017,
     "title": "Tanktoon RanZar Coloring",
     "about": "Тематическая мобильная игра-раскраска по мотивам популярного YouTube-проекта «RanZar — Рандомные Зарисовки».",
-    "contribution": "Фулстек-разработка",
+    "contribution": "Фулстек-разработка проекта.",
     "platforms": "Google Play, App Store",
     "chips": [
-      "Unity",
-      "Coloring",
-      "Mobile"
+      "Раскраска"
     ],
     "images": [
       "media/tanktoon/tanktoon_01.webp",
@@ -223,18 +218,17 @@
       "https://cdn.soft112.com/tanktoon-ranzar-coloring/00/00/0H/EJ/00000HEJ9E/pad_screenshot_2.png",
       "https://cdn.xiaohei.com/games/upload/2024-12-03/bfg30z1uzh4_582.jpg",
       "https://cdn.xiaohei.com/games/upload/2024-12-03/k0g0ixwryqc_587.jpg"
-    ]
+    ],
+    "genre": "Раскраска"
   },
   {
     "year": 2016,
     "title": "Wordica",
     "about": "Развитие идей WordBox: режим прохождения, карта мира, сотни уровней, новые бустеры и интеграция с ВКонтакте; озвучка — Mr. Marmok.",
-    "contribution": "Фулстек-разработка, контроль серверного программиста",
+    "contribution": "Фулстек-разработка; координация и проверка работы серверного программиста.",
     "platforms": "Google Play, App Store",
     "chips": [
-      "Unity",
-      "Word Game",
-      "Social"
+      "Словесная головоломка"
     ],
     "images": [
       "media/wordica/wordica_01.webp",
@@ -251,18 +245,17 @@
       "https://cdn.aptoide.com/imgs/8/d/e/8de2288156cb4a3d868d8ad5205a8844_screen.png",
       "https://cdn.aptoide.com/imgs/3/f/b/3fb4fd6742e6f8b189d005e307d6be04_screen.png",
       "https://cdn.aptoide.com/imgs/e/1/9/e192b252c81909f7b0f313099569bb50_screen.png"
-    ]
+    ],
+    "genre": "Словесная головоломка"
   },
   {
     "year": 2015,
     "title": "FlipStone",
     "about": "Головоломка на основе активации и переворачивания цветных камней. Включала режим приключения и выживания.",
-    "contribution": "Фулстек-разработка, контроль серверного программиста",
+    "contribution": "Фулстек-разработка; координация и проверка работы серверного программиста.",
     "platforms": "Google Play, App Store",
     "chips": [
-      "Unity",
-      "Puzzle",
-      "Gameplay"
+      "Головоломка"
     ],
     "images": [
       "media/flipstone/flipstone_01.webp",
@@ -275,18 +268,17 @@
       "https://image-eo.winudf.com/v2/image/Y29tLmxpa2VpdGdhbWVzLmZsaXBzdG9uZV9zY3JlZW5fMF8xNTM3OTA1MjEwXzAxOQ/screen-0.webp?fakeurl=1&type=.webp",
       "https://image-eo.winudf.com/v2/image/Y29tLmxpa2VpdGdhbWVzLmZsaXBzdG9uZV9zY3JlZW5fMV8xNTM3OTA1MjEyXzAyNw/screen-1.webp?fakeurl=1&type=.webp",
       "https://image-eo.winudf.com/v2/image/Y29tLmxpa2VpdGdhbWVzLmZsaXBzdG9uZV9zY3JlZW5fMl8xNTM3OTA1MjE0XzA1NQ/screen-2.webp?fakeurl=1&type=.webp"
-    ]
+    ],
+    "genre": "Головоломка"
   },
   {
     "year": 2013,
     "title": "WordBox",
-    "about": "Первый независимый проект, созданный совместно с партнёрами. Игра получила feature от Apple и была отмечена как игра месяца одним из английских изданий.",
-    "contribution": "Фулстек-разработка",
+    "about": "Словесная игра, созданная совместно с партнёрами. Проект получил продвижение от Apple.",
+    "contribution": "Фулстек-разработка проекта.",
     "platforms": "Google Play, App Store",
     "chips": [
-      "Indie",
-      "Word Game",
-      "Apple Featured"
+      "Словесная головоломка"
     ],
     "images": [
       "media/wordbox/wordbox_01.webp",
@@ -305,18 +297,17 @@
       "http://www.idow.ru/uploads/posts/2013-01/1359101689_02_ru.jpg",
       "http://www.idow.ru/uploads/posts/2013-01/1359101694_04_ru.jpg",
       "http://www.idow.ru/uploads/posts/2013-01/1359101616_05_ru.jpg"
-    ]
+    ],
+    "genre": "Словесная головоломка"
   },
   {
     "year": 2012,
     "title": "UniFight",
     "about": "Файтинг для Универсиады 2013 — продолжение приключений барсика UNI в формате боевых единоборств.",
-    "contribution": "Программист, сборка UI, сборка игровых уровней, тестирование",
+    "contribution": "Программирование, сборка интерфейсов и игровых уровней, тестирование.",
     "platforms": "Google Play, App Store",
     "chips": [
-      "Unity",
-      "Fighting",
-      "Mobile"
+      "Файтинг"
     ],
     "images": [
       "media/unifight/unifight_01.webp",
@@ -337,18 +328,17 @@
       "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzRfMzhkYTc0ZWM/screen-4.webp?fakeurl=1&type=.webp",
       "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzVfNDAyOTE1ZjU/screen-5.webp?fakeurl=1&type=.webp",
       "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pX0ZpZ2h0X3NjcmVlbnNob3RzXzZfMWUxYjA0MGE/screen-6.webp?fakeurl=1&type=.webp"
-    ]
+    ],
+    "genre": "Файтинг"
   },
   {
     "year": 2011,
     "title": "UniCross",
     "about": "Платформер для Универсиады 2013 о приключениях барсика UNI, который несёт огонь Универсиады в Казань.",
-    "contribution": "Программист, сборка UI, сборка игровых уровней, тестирование",
+    "contribution": "Программирование, сборка интерфейсов и игровых уровней, тестирование.",
     "platforms": "Google Play, App Store",
     "chips": [
-      "Unity",
-      "Platformer",
-      "Mobile"
+      "Платформер"
     ],
     "images": [
       "media/unicross/unicross_01.webp",
@@ -363,6 +353,7 @@
       "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzFfNGMwYmZkNDE/screen-1.webp?fakeurl=1&type=.webp",
       "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzJfYjcyOThlYTI/screen-2.webp?fakeurl=1&type=.webp",
       "https://image-eo.winudf.com/v2/image/Y29tLkluZmluaXR5R2FtZXMuVW5pQ3Jvc3MyX3NjcmVlbnNob3RzXzRfYTMxNWM1OTg/screen-4.webp?fakeurl=1&type=.webp"
-    ]
+    ],
+    "genre": "Платформер"
   }
 ]
