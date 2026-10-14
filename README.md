@@ -18,15 +18,16 @@ npm run build
 npm run preview
 ```
 
-`dist/` содержит готовый статический сайт, PDF и медиа. Относительный `base` поддерживает размещение в подкаталоге. Для публикации скопируйте содержимое `dist/` в document root Nginx. Пример конфигурации для корня домена:
+`dist/` содержит готовый статический сайт, PDF и медиа. Публичный `base` установлен в `/portfolio/` для GitHub Pages; медиа и PDF используют этот же префикс. Для Nginx разместите содержимое `dist/` в `/var/www/html/portfolio/`. Пример конфигурации:
 
 ```nginx
 server {
     listen 80;
     server_name example.com;
-    root /var/www/portfolio;
+    root /var/www/html;
     index index.html;
-    location / { try_files $uri $uri/ =404; }
+    location = /portfolio { return 301 /portfolio/; }
+    location /portfolio/ { try_files $uri $uri/ =404; }
     location ~* \.(webp|jpg|css|js)$ {
         expires 7d;
         add_header Cache-Control "public";
