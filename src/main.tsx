@@ -54,13 +54,12 @@ function App(){
    <p className="large-text">{profile.biography.intro}</p>
    <p className="muted">{profile.biography.background}</p>
    <p className="muted">{profile.biography.work}</p>
-   <p className="muted">{profile.biography.studio}</p>
-   <p className="muted">Посещал конференции <a className="store-link" href={profile.biography.conference.url} target="_blank" rel="noopener noreferrer">{profile.biography.conference.name}</a>, {profile.biography.conference.text}</p>
+   <p className="muted">{profile.biography.studio.split(/(MIDcore)/).map((part,i)=>part==='MIDcore'?<a className="store-link" key={i} href="https://midcore.pro/" target="_blank" rel="noopener noreferrer">{part}</a>:part)}</p>
    <a className="text-link" href="#career">Посмотреть карьерный путь <ArrowDown size={16}/></a>
-  </div><aside className="about-facts" aria-label="Образование, английский и увлечения">
+  </div><aside className="about-facts" aria-label="Образование, языки и хобби">
    <div className="about-fact"><h3>Образование</h3><p>{profile.education}</p></div>
-   <div className="about-fact"><h3>Английский</h3><p>{profile.english}</p></div>
-   <div className="about-fact"><h3>Вне работы</h3><p>{profile.biography.interests}</p></div>
+   <div className="about-fact"><h3>Языки</h3><p>{profile.english}</p></div>
+   <div className="about-fact"><h3>Хобби</h3><p>{profile.biography.interests}</p></div>
   </aside></div>
  </section>
  <section id="expertise" className="section shell"><div className="section-head"><div><p className="eyebrow">03 / ЭКСПЕРТИЗА</p><h2>От механики<br/>до системы.</h2></div><p className="muted section-aside">Практический опыт в мобильных играх,<br/>мультиплеере и инструментах разработки.</p></div><div className="skills">{profile.skills.map((s,i)=><article key={s.title}><span className="index">0{i+1}</span><h3>{s.title}</h3><p>{s.text}</p></article>)}</div></section>
