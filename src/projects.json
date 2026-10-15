@@ -103,8 +103,8 @@
       "Соревновательная головоломка"
     ],
     "images": [
-      "media/tournament-mode/tournament-mode_01.webp",
       "media/tournament-mode/tournament-mode_02.webp",
+      "media/tournament-mode/tournament-mode_01.webp",
       "media/tournament-mode/tournament-mode_03.webp",
       "media/tournament-mode/tournament-mode_04.webp"
     ],
@@ -116,7 +116,15 @@
       "https://play-lh.googleusercontent.com/g8QEJ1j_Ikv-ZqFUt4U8edHSTnzSnerK7LLMrKKvgzz7Z70KS6TFtBZ5UTwoXfb347VNtkcgDd9UeagfaW2W=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/YVEz5JsPzKAFUySrn7mC90KgaGSPICWoGYWWePR-gTpqI6ueRKto08bwHPpi6T2aV3oMyBOQInqcoaQXS6LG=w5120-h2880-rw"
     ],
-    "genre": "Соревновательная головоломка"
+    "genre": "Соревновательная головоломка",
+    "storeLinks": {
+      "Google Play": "https://play.google.com/store/apps/details?id=com.midcore.piratesandpuzzles&hl=ln",
+      "App Store": "https://apps.apple.com/de/app/p-p-tournament-mode/id6502998125"
+    },
+    "descriptionLink": {
+      "label": "Федерации компьютерного спорта России",
+      "url": "https://resf.ru/"
+    }
   },
   {
     "year": 2023,
