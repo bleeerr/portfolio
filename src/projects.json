@@ -68,7 +68,7 @@
     "title": "А ты шаришь!",
     "about": "Мультиплеерная викторина, в которой игроки соревнуются, собирая собственную машину времени быстрее соперников.",
     "contribution": "Лид-программист: руководство и проверка работы клиентского программиста.",
-    "platforms": "Google Play, App Store, VK Games",
+    "platforms": "Google Play, App Store, RuStore, VK Games",
     "chips": [
       "Мультиплеерная викторина"
     ],
@@ -86,7 +86,12 @@
       "https://play-lh.googleusercontent.com/z9vW4sW07snJ3p3Bi-XTrXSODGrtsAZdrm9R3ds_8xOwq6rwHUEtoq5mjno0YLoby_lhHcbPFVR1nNZi09AqQQ=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/lNp8UWBPWc_sc3CAVazQ8geEXPDywFowH_-PCW-jd6qouZ8FiXJ5SZFIbiOL9IWgmJzwJo-lpfqrBRawbpBT=w5120-h2880-rw"
     ],
-    "genre": "Мультиплеерная викторина"
+    "genre": "Мультиплеерная викторина",
+    "storeLinks": {
+      "Google Play": "https://play.google.com/store/apps/details?id=com.midcore.moodrenych&hl=ru",
+      "App Store": "https://apps.apple.com/kg/app/%D0%B0-%D1%82%D1%8B-%D1%88%D0%B0%D1%80%D0%B8%D1%88%D1%8C/id6747186302",
+      "RuStore": "https://www.rustore.ru/catalog/app/com.midcore.moodrenych"
+    }
   },
   {
     "year": 2024,
