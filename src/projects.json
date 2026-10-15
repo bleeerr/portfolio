@@ -206,10 +206,10 @@
       "RPG"
     ],
     "images": [
+      "media/marmok-monster-crush/marmok-monster-crush_04.webp",
       "media/marmok-monster-crush/marmok-monster-crush_01.webp",
       "media/marmok-monster-crush/marmok-monster-crush_02.webp",
       "media/marmok-monster-crush/marmok-monster-crush_03.webp",
-      "media/marmok-monster-crush/marmok-monster-crush_04.webp",
       "media/marmok-monster-crush/marmok-monster-crush_05.webp",
       "media/marmok-monster-crush/marmok-monster-crush_06.webp",
       "media/marmok-monster-crush/marmok-monster-crush_07.webp"
@@ -225,7 +225,11 @@
       "https://cdn.aptoide.com/imgs/f/d/f/fdf1c14abb6873a9aae1a80d77a42bf2_screen.png",
       "https://cdn.aptoide.com/imgs/e/f/9/ef91fbcdd6d424969ec47b7f60b3b0d9_screen.png"
     ],
-    "genre": "Кликер · RPG"
+    "genre": "Кликер · RPG",
+    "descriptionLink": {
+      "label": "Mr. Marmok",
+      "url": "https://www.youtube.com/channel/UCf31Gf5nCU8J6eUlr7QSU0w"
+    }
   },
   {
     "year": 2017,
@@ -250,7 +254,11 @@
       "https://cdn.xiaohei.com/games/upload/2024-12-03/bfg30z1uzh4_582.jpg",
       "https://cdn.xiaohei.com/games/upload/2024-12-03/k0g0ixwryqc_587.jpg"
     ],
-    "genre": "Раскраска"
+    "genre": "Раскраска",
+    "descriptionLink": {
+      "label": "RanZar — Рандомные Зарисовки",
+      "url": "https://www.youtube.com/@RanZar"
+    }
   },
   {
     "year": 2016,
@@ -262,11 +270,11 @@
       "Словесная головоломка"
     ],
     "images": [
+      "media/wordica/wordica_05.webp",
       "media/wordica/wordica_01.webp",
       "media/wordica/wordica_02.webp",
       "media/wordica/wordica_03.webp",
-      "media/wordica/wordica_04.webp",
-      "media/wordica/wordica_05.webp"
+      "media/wordica/wordica_04.webp"
     ],
     "video": "https://www.youtube.com/watch?v=IBJZ0IWkkgY",
     "id": "project-9",
@@ -277,7 +285,11 @@
       "https://cdn.aptoide.com/imgs/3/f/b/3fb4fd6742e6f8b189d005e307d6be04_screen.png",
       "https://cdn.aptoide.com/imgs/e/1/9/e192b252c81909f7b0f313099569bb50_screen.png"
     ],
-    "genre": "Словесная головоломка"
+    "genre": "Словесная головоломка",
+    "descriptionLink": {
+      "label": "Mr. Marmok",
+      "url": "https://www.youtube.com/channel/UCf31Gf5nCU8J6eUlr7QSU0w"
+    }
   },
   {
     "year": 2015,
@@ -289,8 +301,8 @@
       "Головоломка"
     ],
     "images": [
-      "media/flipstone/flipstone_01.webp",
       "media/flipstone/flipstone_02.webp",
+      "media/flipstone/flipstone_01.webp",
       "media/flipstone/flipstone_03.webp"
     ],
     "video": "https://www.youtube.com/watch?v=X_4CLxdGrpE",
@@ -312,14 +324,13 @@
       "Словесная головоломка"
     ],
     "images": [
+      "media/wordbox/wordbox_03.webp",
       "media/wordbox/wordbox_01.webp",
       "media/wordbox/wordbox_02.webp",
-      "media/wordbox/wordbox_03.webp",
       "media/wordbox/wordbox_04.webp",
       "media/wordbox/wordbox_05.webp",
       "media/wordbox/wordbox_06.webp",
-      "media/wordbox/wordbox_07.webp",
-      "media/wordbox/wordbox_08.webp"
+      "media/wordbox/wordbox_07.webp"
     ],
     "video": "https://www.youtube.com/watch?v=JgXBwhsTsAI",
     "id": "project-11",
