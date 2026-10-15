@@ -144,5 +144,9 @@
     "studio": "Infinity Games → Taptics → MIDcore — последовательные названия одной студии.",
     "interests": "В свободное время играю в консольные, мобильные и современные настольные игры."
   },
-  "birthYear": 1987
+  "birthYear": 1987,
+  "university": {
+    "name": "КНИТУ (КХТИ)",
+    "url": "https://www.kstu.ru/"
+  }
 }

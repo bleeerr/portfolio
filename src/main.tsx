@@ -57,7 +57,7 @@ function App(){
    <p className="muted">{profile.biography.studio.split(/(MIDcore)/).map((part,i)=>part==='MIDcore'?<a className="store-link" key={i} href="https://midcore.pro/" target="_blank" rel="noopener noreferrer">{part}</a>:part)}</p>
    <a className="text-link" href="#career">Посмотреть карьерный путь <ArrowDown size={16}/></a>
   </div><aside className="about-facts" aria-label="Образование, языки и хобби">
-   <div className="about-fact"><h3>Образование</h3><p>{profile.education}</p></div>
+   <div className="about-fact"><h3>Образование</h3><p>{profile.education}<br/><a className="store-link" href={profile.university.url} target="_blank" rel="noopener noreferrer">{profile.university.name}</a></p></div>
    <div className="about-fact"><h3>Языки</h3><p>{profile.english}</p></div>
    <div className="about-fact"><h3>Хобби</h3><p>{profile.biography.interests}</p></div>
   </aside></div>
