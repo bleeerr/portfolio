@@ -129,20 +129,20 @@
   {
     "year": 2023,
     "title": "Monsters Crush Clicker",
-    "about": "Фэнтезийный idle-clicker / RPG-проект для мобильных платформ и веба с непрерывным уничтожением волн монстров и титанов-боссов.",
+    "about": "Фэнтезийный idle-кликер с элементами RPG и системой мержа амуниции.",
     "contribution": "Лид-программист: руководство командой до трёх клиентских программистов.",
-    "platforms": "Google Play, App Store, Яндекс Игры, CrazyGames",
+    "platforms": "Google Play, Яндекс Игры",
     "chips": [
       "Idle",
       "Кликер",
       "RPG"
     ],
     "images": [
+      "media/monsters-crush-clicker/monsters-crush-clicker_05.webp",
       "media/monsters-crush-clicker/monsters-crush-clicker_01.webp",
       "media/monsters-crush-clicker/monsters-crush-clicker_02.webp",
       "media/monsters-crush-clicker/monsters-crush-clicker_03.webp",
-      "media/monsters-crush-clicker/monsters-crush-clicker_04.webp",
-      "media/monsters-crush-clicker/monsters-crush-clicker_05.webp"
+      "media/monsters-crush-clicker/monsters-crush-clicker_04.webp"
     ],
     "video": "https://runtime.strm.yandex.ru/player/video/vplvrggyc5rw7vuz4djm?loop=1&mute=1&from=yagames&autoplay=1&preview=0&play_on_visible=0.3&hidden=*&event_prefix=gamepage:",
     "id": "project-5",
@@ -154,7 +154,11 @@
       "https://img.utdstc.com/screen/1c1/669/1c16693990758030ab6e8b0937ba37517916b420993306a4232f0de7b94ffe69:800",
       "https://img.utdstc.com/screen/6fb/1d9/6fb1d9aa096b5cc8539d92dd9c51ecd6d254caf2b12629437e0988f3f963bad6:800"
     ],
-    "genre": "Idle · Кликер · RPG"
+    "genre": "Idle · Кликер · RPG",
+    "storeLinks": {
+      "Google Play": "https://play.google.com/store/apps/details?id=com.midcore.monsterscrush",
+      "Яндекс Игры": "https://yandex.ru/games/app/monster-crush-342711"
+    }
   },
   {
     "year": 2020,
