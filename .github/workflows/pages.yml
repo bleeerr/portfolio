@@ -2,9 +2,6 @@ name: Deploy portfolio to GitHub Pages
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - 'docs/**'
-      - 'CONTENT_NOTES.md'
   workflow_dispatch:
 permissions:
   contents: read
