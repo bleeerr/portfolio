@@ -34,9 +34,9 @@
   {
     "year": 2025,
     "title": "MemeBattle: Что за мем?",
-    "about": "Цифровая версия настольной игры «Что за мем?».",
+    "about": "Цифровая версия настольной игры «Что за мем?». Проект для проверки идеи на вирусность.",
     "contribution": "Лид-программист: руководство и проверка работы клиентского программиста.",
-    "platforms": "Google Play, App Store, Яндекс Игры, CrazyGames",
+    "platforms": "Google Play, Яндекс Игры, CrazyGames",
     "chips": [
       "Игра по мотивам настольной игры"
     ],
@@ -56,7 +56,12 @@
       "https://play-lh.googleusercontent.com/r32DQ70eg-6XJPJbxPZIhPiM0x1MDA9N8sY-BbwehXQ_r6_1MXNSDpRLkVAcgmqX9Os88Aex8uUPDW531edeLw=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/iKwZG4yzMBwPq4Su7peFV5m30mRdjTy5DhCriqsoQ-zWfjmS_A6ol2-yag1oXRhAdYhKAZ7jZs-VwTDlauPYMQ=w5120-h2880-rw"
     ],
-    "genre": "Игра по мотивам настольной игры"
+    "genre": "Игра по мотивам настольной игры",
+    "storeLinks": {
+      "Google Play": "https://play.google.com/store/apps/details?id=com.MIDcore.MemeBattle&hl=ru",
+      "Яндекс Игры": "https://yandex.by/games/app/memebattle-chto-za-mem-364928",
+      "CrazyGames": "https://www.crazygames.com/ru/game/memebattle-what-s-that-meme"
+    }
   },
   {
     "year": 2025,
