@@ -14,11 +14,11 @@
     },
     {
       "title": "Software Architecture",
-      "text": "ООП, ECS, Dependency Injection, Object Pool, FSM и Event Bus. Организация параллельной работы разработчиков."
+      "text": "ООП, ECS, Dependency Injection, Object Pool, FSM и Event Bus. Организация параллельной работы."
     },
     {
       "title": "Performance & Optimization",
-      "text": "Frame Debugger и Memory Profiler. Оптимизация алгоритмов Match-3, работы с памятью, размера сборки и загрузки ресурсов."
+      "text": "Frame Debugger и Memory Profiler. Оптимизация алгоритмов, работы с памятью, размера сборки и загрузки ресурсов."
     },
     {
       "title": "Multiplayer & Networking",
@@ -30,7 +30,7 @@
     },
     {
       "title": "AI & Development Automation",
-      "text": "ИИ для аудита legacy-кода, поиска уязвимостей и вариантов оптимизации. Генерация отдельных компонентов, собственные окна и инспекторы Unity Editor."
+      "text": "ИИ для аудита legacy-кода, поиска уязвимостей и вариантов оптимизации. Генерация отдельных компонентов, инструменты для Unity Editor."
     }
   ],
   "location": "Россия, Казань",
