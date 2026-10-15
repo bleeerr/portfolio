@@ -115,5 +115,23 @@
       "title": "Работа с издателями",
       "text": "Опыт сотрудничества с AppQuantum, MadPixel, HeroCraft и Azur Games."
     }
+  ],
+  "publishers": [
+    {
+      "name": "AppQuantum",
+      "url": "https://appquantum.com/"
+    },
+    {
+      "name": "MadPixel",
+      "url": "https://madpixel.io/"
+    },
+    {
+      "name": "HeroCraft",
+      "url": "https://www.herocraft.com/"
+    },
+    {
+      "name": "Azur Games",
+      "url": "https://azurgames.com/"
+    }
   ]
 }
