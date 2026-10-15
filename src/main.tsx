@@ -4,7 +4,7 @@ import {ArrowUpRight, ArrowDown, Download, X, ChevronLeft, ChevronRight, Play, P
 import projects from './projects.json';
 import profile from './profile.json';
 import './style.css';
-type Project=(typeof projects)[number] & {storeLinks?:Record<string,string>};
+type Project=Omit<(typeof projects)[number],'storeLinks'> & {storeLinks?:Partial<Record<string,string>>};
 const url=(path:string)=>`${import.meta.env.BASE_URL}${path}`;
 function PlatformLinks({project}:{project:Project}){
  return <>{project.platforms.split(', ').map((name,i)=><React.Fragment key={name}>{i>0?', ':''}{project.storeLinks?.[name]?<a className="store-link" href={project.storeLinks[name]} target="_blank" rel="noopener noreferrer">{name}</a>:name}</React.Fragment>)}</>;
