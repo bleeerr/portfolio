@@ -14,7 +14,7 @@
     },
     {
       "title": "Software Architecture",
-      "text": "ООП, ECS, Dependency Injection, Object Pool, FSM и Event Bus. Организация параллельной работы."
+      "text": "ООП, ECS, Dependency Injection, Object Pool, FSM и Event Bus."
     },
     {
       "title": "Performance & Optimization",
