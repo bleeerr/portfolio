@@ -22,7 +22,7 @@
     },
     {
       "title": "Multiplayer & Networking",
-      "text": "HTTP/HTTPS, REST API, WebSockets, TCP/UDP. Клиент-серверное взаимодействие и античит для асинхронного мультиплеера."
+      "text": "HTTP/HTTPS, REST API, WebSockets, TCP/UDP."
     },
     {
       "title": "Technical Leadership",
