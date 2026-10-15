@@ -2,7 +2,7 @@
   {
     "year": 2026,
     "title": "Пираты и Пазлы 2 PvP Три в Ряд",
-    "about": "Многопользовательская Match-3 игра с PvP-сражениями в пиратском сеттинге. Игрок развивает корабль, улучшает команду и продвигается в рейтинге. Издатель — HeroCraft.",
+    "about": "Многопользовательская Match-3 игра с PvP-сражениями в пиратском сеттинге. Игрок развивает корабль, улучшает команду и продвигается в рейтинге.",
     "contribution": "Фулстек-разработка; координация и проверка работы серверного программиста.",
     "platforms": "Google Play, App Store, Яндекс Игры, RuStore",
     "chips": [
@@ -24,7 +24,12 @@
       "https://play-lh.googleusercontent.com/EysXnXSBGTNxyvdI3dwFTgb7sv73ap-BUx-qL0mt6c4xA8MFnsacuga_jBhOr6oQ9CXgv4n84PPsEhN-WYdwM3g=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/3-CTzm9yA-3b65Y2ZJgMqkn-NWaApgclQI7CNVMNKyO3Ox4hXd-PUcIe9hjmZxoRUmFGDJU6fR2CSwQJyUW2Aw=w5120-h2880-rw"
     ],
-    "genre": "PvP · Match-3 · RPG"
+    "genre": "PvP · Match-3 · RPG",
+    "storeLinks": {
+      "Google Play": "https://play.google.com/store/apps/details?id=com.midcore.pirates.and.puzzles.two.match.pvp&hl=ru",
+      "Яндекс Игры": "https://yandex.ru/games/app/piraty-i-pazly-2-494640",
+      "RuStore": "https://www.rustore.ru/catalog/app/com.midcore.pirates.and.puzzles.two.match.pvp"
+    }
   },
   {
     "year": 2025,

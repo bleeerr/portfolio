@@ -11,3 +11,5 @@
 .stage-arrow{position:absolute;z-index:2;top:50%;transform:translateY(-50%);width:46px;height:46px;display:flex;align-items:center;justify-content:center;background:#f7f7f2ef;border:1px solid #bcc7b2;border-radius:50%;box-shadow:0 2px 12px #20302020}.stage-arrow.previous{left:12px}.stage-arrow.next{right:12px}.stage-arrow:hover{background:#fff}
 
 .studio-link{display:inline-flex;align-items:center;gap:8px;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}.studio-link:hover{color:var(--accent)}
+
+.store-link{color:var(--accent);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}.store-link:hover{text-decoration-thickness:2px}
