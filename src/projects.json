@@ -163,7 +163,7 @@
   {
     "year": 2020,
     "title": "Pirates & Puzzles: Ship Battles",
-    "about": "Многопользовательская Match-3 игра с PvP-сражениями и RPG-прогрессией в пиратском сеттинге. Издатель — HeroCraft.",
+    "about": "Многопользовательская Match-3 игра с PvP-сражениями и RPG-прогрессией в пиратском сеттинге.",
     "contribution": "Лид-программист: руководство командой до двух серверных и трёх клиентских программистов.",
     "platforms": "Google Play, App Store, Huawei AppGallery, RuStore",
     "chips": [
@@ -189,7 +189,11 @@
       "https://play-lh.googleusercontent.com/TZKbVxEaBAcZ5739J7EINo3PY0Sx9Cg10hAIm-XJCIB7PGBqP1yGjUKMc85VVO7S70XK-L264Wry2jyGDLst=w5120-h2880-rw",
       "https://play-lh.googleusercontent.com/uWi8t4hCVjMawrkfJJqbLDXPyjlSQcptBztmXgMJHyWckPG-IwXvL9sv4wN5VmqRB9qttSQVwq2OOP0e0_RQ8BM=w5120-h2880-rw"
     ],
-    "genre": "PvP · Match-3 · RPG"
+    "genre": "PvP · Match-3 · RPG",
+    "storeLinks": {
+      "Google Play": "https://play.google.com/store/apps/details?id=com.herocraft.game.pirates.and.puzzles.match.pvp",
+      "App Store": "https://apps.apple.com/us/app/pirates-puzzles-pvp-league/id1483755748"
+    }
   },
   {
     "year": 2017,
